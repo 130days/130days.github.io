@@ -84,6 +84,18 @@ function addPageTwo() {
             setTimeout(() => {
                 document.body.style["background-image"] = "linear-gradient(to right top, #1f0537, #380c60, #55108c, #7413bb, #9612eb)";
             }, 5);
+            const start = () => {
+                      setTimeout(function() {
+                          confetti.start()
+                      }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+                    };
+                    const stop = () => {
+                      setTimeout(function() {
+                          confetti.stop()
+                      }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+                    };
+                    start();
+                    stop();
             window.addEventListener('click', function(e){   
                 if (document.getElementById('birthday-card').contains(e.target)){
                   // Clicked in box
