@@ -148,6 +148,7 @@ background-position: center; /* Center the image */
 }
 
 .card.card-hovered .front {
+	 z-index: -1;
 	 -webkit-transform: perspective(800px) rotateY(-170deg);
 	 background-color: #41718d;
 }
