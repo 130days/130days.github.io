@@ -34,15 +34,15 @@ document.body.append(pageTwoTemplate);
 const cardPageTemplate = document.createElement("template");
 cardPageTemplate.innerHTML = `<div id="root" style="height: 100vh; width: 100vw; display: flex; flex-direction: column; justify-content: center; align-items: center">
         <div id="birthday-card" class="card">
-          <div id="birthday-card-back" class="back"></div>
+          <div class="back"></div>
           <div class="front">
-            <div class="imgset" style="height: 300px">
+            <div class="imgset" style="height: 600px">
                  <img src="bday-card.jpg" style="max-height: 100%; max-width: 100%" />
             </div>
           </div>
-          <div id="birthday-card-text" class="text-container">
+          <div class="text-container">
             <p id="head">Dear Inara,</p>
-            <p>I hope your special day will bring you lots of happiness, love, and fun. You deserve them a lot. Enjoy!</p>
+            <p>I hope your cherishing every moment of intern life and enjoying your time in Chicago. I don't know if you know this but, fun fact, it's actually Batman's hometown. Maybe you'll run into him one of these days. In any case, there is frankly so much I could say right now but I think I'll save most of it for a little longer. I know we still don't know each other super well, but in the little interaction that we've had so far I've already begun realizing that I'm dealing with quite the gem. Your smart, talented, cheerful, funny minus the "ny", and thoughtful. I pray that Allah Swt blesses you with a fire day not just today but in everyday to come. Oh, and maybe I shouldn't say this but I'm also kinda praying that birthday girl comes home sooner than later. </p>
             <p style="text-align: right">Aabid</p>
           </div>
         </div>
