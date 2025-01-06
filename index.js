@@ -42,8 +42,17 @@ cardPageTemplate.innerHTML = `<div id="root" style="height: 100vh; width: 100vw;
           </div>
           <div class="text-container">
             <p id="head">Dear Inara,</p>
-            <p>I hope your cherishing every moment of intern life and enjoying your time in Chicago. I don't know if you know this but, fun fact, it's actually Batman's hometown. Maybe you'll run into him one of these days. In any case, there is frankly so much I could say right now but I think I'll save most of it for a little longer. I know we still don't know each other super well, but in the little interaction that we've had so far I've already begun realizing that I'm dealing with quite the gem. Your smart, talented, cheerful, funny minus the "ny", and thoughtful. I pray that Allah Swt blesses you with a fire day not just today but in everyday to come. Oh, and maybe I shouldn't say this but I'm also kinda praying that birthday girl comes home sooner than later. </p>
-            <p style="text-align: right">Aabid</p>
+            <p>I hope you're cherishing every moment of intern life and enjoying your time in Chicago. 
+              I don't know if you know this but, fun fact, it's actually Batman's hometown. 
+              In any case, there is frankly so much I want to say right now but I think I'll save 
+              most of it for a little longer. I know we still don't know each other super well, 
+              but in the little interaction that we've had so far I've already begun realizing that 
+              I'm dealing with quite the gem. You are smart, talented, cheerful, funny (minus the "ny"),
+               and thoughtful. I pray that Allah Swt blesses you with a fire day not just today but 
+               every day to come. Oh, and maybe I shouldn't say this but I'm also kinda hoping that 
+               birthday girl comes home sooner than later. <br/></p>
+               <p>Happy 21st <span style="font-style: normal">🥳😍🙈🎈🎉</span></p>
+             <p style="text-align: right; margin-top: 13px;">Your fiancée,&nbsp; <br/> Aabid Roshan</p>
           </div>
         </div>
     </div>
