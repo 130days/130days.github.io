@@ -38,8 +38,8 @@
   }
 
   .second-page-typing {
-    width: 34ch;
-    animation: typing 3s steps(34), blink .5s step-end infinite alternate;
+    width: 33ch;
+    animation: typing 3s steps(33), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
