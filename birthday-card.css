@@ -127,6 +127,7 @@ background-position: center; /* Center the image */
 	 background-size: contain;
 	 transform-style: preserve-3d;
 	 transform-origin: 0% 50%;
+	 -web-kit-transform: perspective(800px) rotateY(0deg);
 	 transform: perspective(800px) rotateY(0deg);
 	 transition: all 0.8s ease-in-out;
 }
@@ -140,6 +141,7 @@ background-position: center; /* Center the image */
 	 filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5));
 	 transform-style: preserve-3d;
 	 transform-origin: 0% 50%;
+	 -web-kit-transform: perspective(800px) rotateY(0deg);
 	 transform: perspective(800px) rotateY(0deg);
 	 transition: all 0.8s ease-in-out;
 	 /*background-color: #e6f0e6;*/
@@ -170,5 +172,5 @@ background-position: center; /* Center the image */
 {
     box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
     border-radius: 5px;
-    z-index: 2;
+    /*z-index: 2;*/
 }
