@@ -1,0 +1,97 @@
+.inside-balloon {
+    width: 50px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0.5);
+    border: 1px solid black;
+}
+.balloon {
+    position: absolute;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+    /*background-color: rgba(192, 1, 5, 0.4);*/
+
+    /*animation: move-up 5s;*/
+}
+.balloon::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 40px;
+    background-color: white;
+    top: 60px;
+    left: 50px;
+}
+.balloon::after {
+    position: absolute;
+    content: '';
+    border-bottom: 12px solid red;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: 59px;
+    left: 41px;
+}
+/* THIS IS THE BLUE BALLOON */
+.balloon:nth-child(2) {
+	left: 120px;
+    /*background-color: rgba(0, 0, 255, 0.5);*/
+	animation-duration: 3s;
+}
+.balloon:nth-child(2)::after {
+	border-bottom: 12px solid blue;
+}
+.balloon:nth-child(3) {
+	left: 150px;
+    /*background-color: rgba(255, 255, 0, 0.5);*/
+	animation-duration: 2s;
+}
+.balloon:nth-child(3)::after {
+	border-bottom: 12px solid yellow;
+}
+
+/* THIS IS THE GREEN BALLOON */
+.balloon:nth-child(4) {
+	left: 195px;
+    /*background-color: rgba(0, 128, 0, 0.5);*/
+	animation-duration: 3s;
+}
+.balloon:nth-child(4)::after {
+	border-bottom: 12px solid green;
+}
+.balloon:nth-child(5) {
+	left: 200px;
+    /*background-color: rgba(192, 1, 5, 0.5);*/
+	animation-duration: 4s;
+}
+/* THIS IS THE RED BALLON */
+.balloon:nth-child(6) {
+	left: 270px;
+    /*background-color: rgba(255, 165, 0, 0.5);*/
+	animation-duration: 3s;
+}
+.balloon:nth-child(6)::after {
+	border-bottom: 12px solid orange;
+}
+.balloon:nth-child(7) {
+	left: 360px;
+    /*background-color: rgba(192, 1, 5, 0.5);*/
+	animation-duration: 5s;
+}
+.balloon:nth-child(8) {
+	left: 390px;
+    /*background-color: rgba(192, 1, 5, 0.5);*/
+	animation-duration: 2s;
+}
+
+@keyframes move-up {
+    0% {
+        top: 69%;
+	}
+	100% {
+		top: 0%;
+	}
+}
