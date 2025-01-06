@@ -9,7 +9,7 @@ pageTwoTemplate.innerHTML =
       justify-content: center">
         <div style="display: flex; justify-content: center; margin-bottom: 15px;">
             <div id="second-page-typing" class="second-page-typing">
-            Oh, and in case your not her...
+            Oh, and in case you're not her...
             </div>
         </div>
         <div
