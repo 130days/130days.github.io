@@ -148,15 +148,13 @@ background-position: center; /* Center the image */
 }
 
 .card.card-hovered .front {
-	 transform: perspective(800px) rotateY(-170deg);
+	 -webkit-transform: perspective(800px) rotateY(-170deg);
 	 background-color: #41718d;
-	z-index: 0;
 }
 .card.card-hovered .back {
-	 transform: perspective(800px) rotateY(-170deg);
+	 -webkit-transform: perspective(800px) rotateY(-170deg);
 	 box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
      background-color: rgba(255, 255, 255, 0.877);
-     z-index: 0;
 }
 
 .imgset
