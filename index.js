@@ -80,8 +80,34 @@ function addPageTwo() {
             const pageToRemove = document.getElementById("page-two");
             pageToRemove.remove();
             const finalPage = cardPageTemplate.content.cloneNode(true);
-            document.body.append(finalPage);;
+            document.body.append(finalPage);
             setTimeout(() => {
+                document.body.style["background-image"] = "linear-gradient(to right top, #1f0537, #380c60, #55108c, #7413bb, #9612eb)";
+            }, 5);
+            window.addEventListener('click', function(e){   
+                if (document.getElementById('birthday-card').contains(e.target)){
+                  // Clicked in box
+                  document.getElementById("birthday-card").classList.add("card-hovered");
+                  setTimeout(() => {
+                    const start = () => {
+                      setTimeout(function() {
+                          confetti.start()
+                      }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+                    };
+                    const stop = () => {
+                      setTimeout(function() {
+                          confetti.stop()
+                      }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+                    };
+                    start();
+                    stop();
+                }, 5);
+                } else{
+                  // Clicked outside the box
+                  document.getElementById("birthday-card").classList.remove("card-hovered");
+                }
+              });
+            /*setTimeout(() => {
                 document.body.style["background-image"] = "linear-gradient(to right top, #1f0537, #380c60, #55108c, #7413bb, #9612eb)";
                 const start = () => {
                   setTimeout(function() {
@@ -95,7 +121,7 @@ function addPageTwo() {
                 };
                 start();
                 stop();
-            }, 5);
+            }, 5);*/
           }, 300);
         } else {
           passwordBox.style["animation-name"] = "shake, glow-red";
