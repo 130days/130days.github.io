@@ -36,7 +36,7 @@ cardPageTemplate.innerHTML = `<div id="root" style="height: 100vh; width: 100vw;
         <div id="birthday-card" class="card">
           <div class="back"></div>
           <div class="front">
-            <div class="imgset" style="height: 600px">
+            <div class="imgset" style="height: 450px">
                  <img src="burday-card-cover.jpg" style="max-height: 100%; max-width: 100%" />
             </div>
           </div>
