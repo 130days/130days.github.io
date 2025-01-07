@@ -60,9 +60,13 @@ background-position: center; /* Center the image */
 	/* background-image: url($cover-image);
 	 */
 	 background-size: contain;
+	 -web-kit-transform-style: preserve-3d;
 	 transform-style: preserve-3d;
+	 -web-kit-transform-origin: 0% 50%;
 	 transform-origin: 0% 50%;
+	 -web-kit-transform: perspective(800px) rotateY(0deg);
 	 transform: perspective(800px) rotateY(0deg);
+	 -web-kit-transition: all 0.8s ease-in-out;
 	 transition: all 0.8s ease-in-out;
 }
  .card .back {
@@ -73,9 +77,13 @@ background-position: center; /* Center the image */
 	 margin: -10px 0px 0px -10px;
 	 backface-visibility: visible;
 	 filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5));
+	 -web-kit-transform-style: preserve-3d;
 	 transform-style: preserve-3d;
+	 -web-kit-transform-origin: 0% 50%;
 	 transform-origin: 0% 50%;
+	 -web-kit-transform: perspective(800px) rotateY(0deg);
 	 transform: perspective(800px) rotateY(0deg);
+	 -web-kit-transition: all 0.8s ease-in-out;
 	 transition: all 0.8s ease-in-out;
 	 /*background-color: #e6f0e6;*/
      background-color: white;
