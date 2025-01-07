@@ -37,7 +37,7 @@ cardPageTemplate.innerHTML = `<div id="root" style="height: 100vh; width: 100vw;
           <div class="back"></div>
           <div class="front">
             <div class="imgset" style="height: 450px">
-                 <img src="burday-card-cover.jpg" style="max-height: 100%; max-width: 100%" />
+                 <img id="burday-card-cover" src="burday-card-cover.jpg" style="max-height: 100%; max-width: 100%" />
             </div>
           </div>
           <div class="text-container">
@@ -97,9 +97,9 @@ function addPageTwo() {
                     start();
                     stop();
             window.addEventListener('click', function(e){   
-                if (document.getElementById('birthday-card').contains(e.target)){
+                if (document.getElementById('burday-card-cover').contains(e.target)){
                   // Clicked in box
-                  document.getElementById("birthday-card").classList.add("card-hovered");
+                  document.getElementById("birthday-card-cover").classList.add("card-hovered");
                   setTimeout(() => {
                     const start = () => {
                       setTimeout(function() {
@@ -120,7 +120,7 @@ function addPageTwo() {
                 }
               });
             window.addEventListener('touchstart', function(e){   
-                if (document.getElementById('birthday-card').contains(e.target)){
+                if (document.getElementById('burday-card-cover').contains(e.target)){
                   // Clicked in box
                   document.getElementById("birthday-card").classList.add("card-hovered");
                   setTimeout(() => {
