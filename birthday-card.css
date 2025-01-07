@@ -10,7 +10,6 @@ body {
 
 .card {
 	 position: relative;
-	 z-index: -5;
 	 width: 300px;
 	 height: 450px;
 	 border: 10px solid rgba(245, 245, 220, 0.76);
@@ -108,14 +107,14 @@ background-position: center; /* Center the image */
 .imgset
 {
   position: relative;
-  z-index: 1;
+  z-index: 99999;
   margin-bottom: -215px;
 }
 .imgset img
 {
     box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
     border-radius: 5px;
-    z-index: 999;
+    z-index: 999999;
 }
 }
 
