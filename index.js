@@ -46,7 +46,7 @@ cardPageTemplate.innerHTML = `<div id="root" style="height: 100vh; width: 100vw;
             <p>I hope you're cherishing every moment of intern life and enjoying your time in Chicago. 
               You probably don't know this but, it's actually Batman's hometown. In any case,
               there is frankly so much I want to say right now but I think I'll save 
-              most of it for now. I know we still don't know each other super well, 
+              most of it for just a little longer. I know we still don't know each other super well, 
               but from the little interaction we've had I'm quickly realizing that I've
               got quite the gem on my hands. You are smart, talented, cheerful, funny (minus the "ny"), 
               thoughtful, and more. I pray that Allah Swt blesses you with a fire day not just today but 
