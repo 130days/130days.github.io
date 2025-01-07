@@ -1,4 +1,4 @@
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 660px) {
 body {
   /*background-image: linear-gradient(to right top, #1f0537, #380c60, #55108c, #7413bb, #9612eb);*/
     height: 100vh;
@@ -107,7 +107,7 @@ background-position: center; /* Center the image */
 }
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 660px) {
 body
 {
   /*background-image: linear-gradient(to right top, #1f0537, #380c60, #55108c, #7413bb, #9612eb);*/
