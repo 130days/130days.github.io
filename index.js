@@ -1,3 +1,4 @@
+let cardHovered = false;
 const pageTwoTemplate = document.createElement("template");
 pageTwoTemplate.innerHTML =
     `<div 
@@ -35,7 +36,7 @@ const cardPageTemplate = document.createElement("template");
 cardPageTemplate.innerHTML = `<div id="root" style="height: 100vh; width: 100vw; display: flex; flex-direction: column; justify-content: center; align-items: center">
         <div id="birthday-card" class="card">
           <div class="back"></div>
-          <div class="front">
+          <div id="birthday-card-front" class="front">
             <div class="imgset" style="height: 450px">
                  <img id="burday-card-cover" src="burday-card-cover.jpg" style="max-height: 100%; max-width: 100%" />
             </div>
@@ -96,10 +97,33 @@ function addPageTwo() {
                     };
                     start();
                     stop();
-            window.addEventListener('click', function(e){   
-                if (document.getElementById('burday-card-cover').contains(e.target)){
-                  // Clicked in box
-                  document.getElementById("birthday-card-cover").classList.add("card-hovered");
+            document.getElementById("birthday-card").addEventListener('mouseover', () => {
+              if (!cardHovered) {
+                cardHovered = true;
+                setTimeout(() => {
+                  const start = () => {
+                    setTimeout(function() {
+                        confetti.start()
+                    }, 300); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+                  };
+                  const stop = () => {
+                    setTimeout(function() {
+                        confetti.stop()
+                    }, 4300); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+                  };
+                  start();
+                  stop();
+                }, 5);
+              }
+            });
+            document.getElementById("birthday-card").addEventListener('mouseleave', () => {
+              cardHovered = false;
+            });
+            window.addEventListener('touchstart', function(e){   
+                if (document.getElementById("birthday-card").classList.contains("card-hovered")) {
+                  document.getElementById("birthday-card").classList.remove("card-hovered");
+                } else {
+                  document.getElementById("birthday-card").classList.add("card-hovered");
                   setTimeout(() => {
                     const start = () => {
                       setTimeout(function() {
@@ -113,13 +137,10 @@ function addPageTwo() {
                     };
                     start();
                     stop();
-                }, 5);
-                } else{
-                  // Clicked outside the box
-                  document.getElementById("birthday-card").classList.remove("card-hovered");
+                  }, 5);
                 }
               });
-            window.addEventListener('touchstart', function(e){   
+            /*window.addEventListener('touchstart', function(e){   
                 if (document.getElementById('burday-card-cover').contains(e.target)){
                   // Clicked in box
                   document.getElementById("birthday-card").classList.add("card-hovered");
@@ -141,7 +162,7 @@ function addPageTwo() {
                   // Clicked outside the box
                   document.getElementById("birthday-card").classList.remove("card-hovered");
                 }
-              });
+              });*/
             /*setTimeout(() => {
                 document.body.style["background-image"] = "linear-gradient(to right top, #1f0537, #380c60, #55108c, #7413bb, #9612eb)";
                 const start = () => {
